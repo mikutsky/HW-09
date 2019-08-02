@@ -113,7 +113,6 @@ function renderNews(newsItems) {
 
 //Функция подготавливает полученную новость, оборачивает в шаблон
 function newsTemplate({ url, title, description, urlToImage } = {}) {
-  
   return `
     <div class="col s12">
       <div class="card">
@@ -140,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function() {
   loadNews();
 });
 
-//Устанавливаем событие на кнопку Search
+//Устанавливаем событие на submit формы
 document.forms[0].addEventListener("submit", el => {
   el.preventDefault();
 
